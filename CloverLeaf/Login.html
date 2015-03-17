@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Log In</title>
+    <meta name="description" content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/css/semantic.min.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .ui.form{
+            width: 33%;
+            position: fixed;
+            top: 33%;
+            left: 33%;
+        }
+    </style>
+</head>
+<body>
+        <form action="Login.php" method="post">        
+            <div class="ui form inverted green segment">
+                <div class="field">
+                    <label>Username</label>
+                    <div class="ui left labeled icon input">
+                        <input placeholder="eg. user@user.com" name="email" type="text">
+                        <i class="user icon"></i>
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <div class="ui left labeled icon input">
+                        <input type="password" name="password">
+                        <i class="lock icon"></i>
+                        <div class="ui corner label">
+                            <i class="icon asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="ui green submit button" value="Sign In"/>
+            </div>
+        </form>
+</body>
+</html>
